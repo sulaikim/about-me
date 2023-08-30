@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 80px; /* footer height */
+    }
+
+body{
+    margin: 0px;
+    height: 100%;
+    background-color: #213555;
+    font-family: 'Karla', sans-serif;
+}
+.card-body p{
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+a{
+    color : white;
+    text-decoration: none;
+}
+a:hover{
+    color: #EA906C;
+}
+nav {
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .nav-item{
+    padding:30px 15px; 
+    /* 위,오,아,왼 순서 또는 위아래, 좌우 순서 */
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+
+}
+.sub_menu{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight:bold;
+}
+.profile{  
+    border-radius: 100%; 
+}
+.sub-con1{
+    color:white;
+    padding: 60px;
+}
+.sub-con2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 컨테이너 내 가운데 정렬 justify content:center*/
+}
+#intro2_skew{
+    width: 500px;
+    margin:20px auto;
+}
+.intro1{
+    width: 400px;
+    height: 80px;
+    background-color: black;
+    font-size: X-large;
+    line-height: 80px;
+    /* 박스내 세로 가운데정렬 = 박스높이와 동일하게 설정 */
+    transform:skewX(170deg)
+  }
+  .intro2{
+    padding: 20px; 
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.card-header{
+    color: #213555;
+    text-align: center;
+  }
+.card{
+    width:50%;
+    margin: 30px;
+    background-color: #EA906C;
+}
+.card-header{
+    font-weight: 700;
+    font-size: larger;
+}
+.card-body p{
+    font-size: medium;
+}
+
+.port_img{
+    text-align: center;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+    color: white;   
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: right;
+    line-height: 80px;  
+}
+.iconbox{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+@media screen and (max-width: 390px){
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 400px;
+    }
+}
